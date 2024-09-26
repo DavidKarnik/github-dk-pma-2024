@@ -1,5 +1,6 @@
-package com.example.myapp01linearlayout;
+package com.example.myapp002myownlinearlayout;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,17 +9,19 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText etName, etSurname, etPlace, etVek;
     private TextView tvInformation;
+    private String[] colors = {"#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF", "#F0F0F0"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Najdeme jednotlivé prvky layoutu
         etName = findViewById(R.id.etName);
         etSurname = findViewById(R.id.etSurname);
         etPlace = findViewById(R.id.etPlace);
@@ -26,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
         tvInformation = findViewById(R.id.tvInformation);
         Button btnSend = findViewById(R.id.btnSend);
         Button btnDelete = findViewById(R.id.btnDelete);
+        Button btnChangeColor = findViewById(R.id.btnChangeColor);
 
-        // Logika pro tlačítko Odeslat
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Logika pro tlačítko Vymazat
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,6 +56,16 @@ public class MainActivity extends AppCompatActivity {
                 etPlace.setText("");
                 etVek.setText("");
                 tvInformation.setText("");
+            }
+        });
+
+        btnChangeColor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Random random = new Random();
+                int randomIndex = random.nextInt(colors.length);
+                String randomColor = colors[randomIndex];
+                tvInformation.setBackgroundColor(Color.parseColor(randomColor));
             }
         });
     }

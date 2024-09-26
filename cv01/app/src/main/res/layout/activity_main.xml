@@ -9,7 +9,6 @@
     android:padding="20dp"
     tools:context=".MainActivity">
 
-    <!-- Jméno a Příjmení vedle sebe -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,7 +33,6 @@
             android:layout_weight="1" />
     </LinearLayout>
 
-    <!-- Obec -->
     <EditText
         android:id="@+id/etPlace"
         android:layout_width="match_parent"
@@ -43,7 +41,6 @@
         android:hint="Zadejte obec"
         android:textColor="@color/blue" />
 
-    <!-- Věk, Odeslat a Vymazat tlačítka -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
