@@ -24,18 +24,24 @@
         android:max="100"
         android:progress="24" />
 
-    <Button
-        android:id="@+id/btnChangeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Změnit text" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/btnChangeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20sp"
+            android:layout_weight="1"
+            android:text="Změnit text" />
 
-    <Button
-        android:id="@+id/btnChangeColor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Změnit barvu" />
-
+        <Button
+            android:id="@+id/btnChangeColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Změnit barvu" />
+    </LinearLayout>
 </LinearLayout>
