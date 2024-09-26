@@ -1,85 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:padding="20dp"
-    tools:context=".MainActivity">
+    android:padding="20dp">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#f0f0f0"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Ukázkový text"
+        android:textSize="24sp" />
+
+    <SeekBar
+        android:id="@+id/seekBarSize"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:max="100"
+        android:progress="24" />
 
-        <EditText
-            android:id="@+id/etName"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="Jméno"
-            android:layout_weight="1" />
-
-        <EditText
-            android:id="@+id/etSurname"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="Příjmení"
-            android:layout_weight="1" />
-    </LinearLayout>
-
-    <EditText
-        android:id="@+id/etPlace"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btnChangeText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="Obec" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/etVek"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:hint="Věk"
-            android:layout_weight="1"
-            android:layout_marginRight="10dp" />
-
-        <Button
-            android:id="@+id/btnSend"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Odeslat"
-            android:layout_weight="1"
-            android:layout_marginRight="10dp" />
-
-        <Button
-            android:id="@+id/btnDelete"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Vymazat"
-            android:layout_weight="1" />
-    </LinearLayout>
+        android:layout_marginTop="20dp"
+        android:text="Změnit text" />
 
     <Button
         android:id="@+id/btnChangeColor"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Změnit barvu" />
 
-    <TextView
-        android:id="@+id/tvInformation"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:hint="Informace"
-        android:textSize="20sp"
-        android:padding="20dp"
-        android:background="#f0f0f0" />
 </LinearLayout>

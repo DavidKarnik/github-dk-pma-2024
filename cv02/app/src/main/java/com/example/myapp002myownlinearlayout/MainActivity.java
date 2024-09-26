@@ -2,9 +2,8 @@ package com.example.myapp002myownlinearlayout;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,60 +12,50 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText etName, etSurname, etPlace, etVek;
-    private TextView tvInformation;
-    private String[] colors = {"#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF", "#F0F0F0"};
+    private TextView tvDisplay;
+    private SeekBar seekBarSize;
+    private String[] colors = {"#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF"};
+    private String[] texts = {"Hello World!", "Ahoj světe!", "Vítejte!", "PMA Aplikace", "Android 1234"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        etName = findViewById(R.id.etName);
-        etSurname = findViewById(R.id.etSurname);
-        etPlace = findViewById(R.id.etPlace);
-        etVek = findViewById(R.id.etVek);
-        tvInformation = findViewById(R.id.tvInformation);
-        Button btnSend = findViewById(R.id.btnSend);
-        Button btnDelete = findViewById(R.id.btnDelete);
+        tvDisplay = findViewById(R.id.tvDisplay);
+        seekBarSize = findViewById(R.id.seekBarSize);
+        Button btnChangeText = findViewById(R.id.btnChangeText);
         Button btnChangeColor = findViewById(R.id.btnChangeColor);
 
-        btnSend.setOnClickListener(new View.OnClickListener() {
+        seekBarSize.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
-            public void onClick(View v) {
-                String name = etName.getText().toString();
-                String surname = etSurname.getText().toString();
-                String place = etPlace.getText().toString();
-                String vek = etVek.getText().toString();
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                // velikosti textu dle posuvníku
+                tvDisplay.setTextSize(progress);
+            }
 
-                String info = "Jméno: " + name + "\n" +
-                        "Příjmení: " + surname + "\n" +
-                        "Obec: " + place + "\n" +
-                        "Věk: " + vek;
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
 
-                tvInformation.setText(info);
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
             }
         });
 
-        btnDelete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                etName.setText("");
-                etSurname.setText("");
-                etPlace.setText("");
-                etVek.setText("");
-                tvInformation.setText("");
-            }
+        // změna textu
+        btnChangeText.setOnClickListener(v -> {
+            Random random = new Random();
+            int randomIndex = random.nextInt(texts.length);
+            tvDisplay.setText(texts[randomIndex]);
         });
 
-        btnChangeColor.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Random random = new Random();
-                int randomIndex = random.nextInt(colors.length);
-                String randomColor = colors[randomIndex];
-                tvInformation.setBackgroundColor(Color.parseColor(randomColor));
-            }
+        // změna barvy textu
+        btnChangeColor.setOnClickListener(v -> {
+            Random random = new Random();
+            int randomIndex = random.nextInt(colors.length);
+            String randomColor = colors[randomIndex];
+            tvDisplay.setTextColor(Color.parseColor(randomColor));
         });
     }
 }
