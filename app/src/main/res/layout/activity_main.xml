@@ -2,13 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".MainActivity">
 
+    <!-- Jméno a Příjmení vedle sebe -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,31 +17,33 @@
 
         <EditText
             android:id="@+id/etName"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:inputType="text"
             android:hint="Zadejte jméno"
             android:textColor="@color/blue"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
 
         <EditText
             android:id="@+id/etSurname"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:inputType="text"
             android:hint="Zadejte příjmení"
             android:textColor="@color/blue"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
     </LinearLayout>
 
+    <!-- Obec -->
     <EditText
         android:id="@+id/etPlace"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
         android:hint="Zadejte obec"
-        android:textColor="@color/blue"/>
+        android:textColor="@color/blue" />
 
+    <!-- Věk, Odeslat a Vymazat tlačítka -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,33 +51,32 @@
 
         <EditText
             android:id="@+id/etVek"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:hint="Věk"
             android:textColor="@color/blue"
             android:layout_weight="1"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp" />
 
         <Button
             android:id="@+id/btnSend"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Odeslat"
-            android:textSize="18dp"
-            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_weight="2"
             android:backgroundTint="@color/green"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp" />
 
         <Button
             android:id="@+id/btnDelete"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Vymazat"
-            android:textSize="18dp"
-            android:backgroundTint="@color/red"
-            android:layout_weight="1"/>
-
+            android:textSize="18sp"
+            android:layout_weight="2"
+            android:backgroundTint="@color/red" />
     </LinearLayout>
 
     <TextView
@@ -82,32 +84,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:hint="Informace"
-        android:inputType="text"
-        android:layout_marginTop="20dp"
+        android:textSize="20sp"
         android:padding="20dp"
-        android:textSize="20dp"/>
-
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fitsSystemWindows="true">
-
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize" />
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <include layout="@layout/content_main" />
-
-<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-<!--        android:id="@+id/fab"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_gravity="bottom|end"-->
-<!--        android:layout_marginEnd="@dimen/fab_margin"-->
-<!--        android:layout_marginBottom="16dp"-->
-<!--        app:srcCompat="@android:drawable/ic_dialog_email" />-->
-
+        android:background="#f0f0f0" />
 </LinearLayout>

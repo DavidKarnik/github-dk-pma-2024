@@ -1,68 +1,60 @@
 package com.example.myapp01linearlayout;
 
 import android.os.Bundle;
-
-import com.google.android.material.snackbar.Snackbar;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.view.View;
-
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
-
-import com.example.myapp01linearlayout.databinding.ActivityMainBinding;
-
-import android.view.Menu;
-import android.view.MenuItem;
-
 public class MainActivity extends AppCompatActivity {
 
-    private AppBarConfiguration appBarConfiguration;
-    private ActivityMainBinding binding;
+    private EditText etName, etSurname, etPlace, etVek;
+    private TextView tvInformation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        // Najdeme jednotlivé prvky layoutu
+        etName = findViewById(R.id.etName);
+        etSurname = findViewById(R.id.etSurname);
+        etPlace = findViewById(R.id.etPlace);
+        etVek = findViewById(R.id.etVek);
+        tvInformation = findViewById(R.id.tvInformation);
+        Button btnSend = findViewById(R.id.btnSend);
+        Button btnDelete = findViewById(R.id.btnDelete);
 
-        setSupportActionBar(binding.toolbar);
+        // Logika pro tlačítko Odeslat
+        btnSend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = etName.getText().toString();
+                String surname = etSurname.getText().toString();
+                String place = etPlace.getText().toString();
+                String vek = etVek.getText().toString();
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-    }
+                String info = "Jméno: " + name + "\n" +
+                        "Příjmení: " + surname + "\n" +
+                        "Obec: " + place + "\n" +
+                        "Věk: " + vek;
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+                tvInformation.setText(info);
+            }
+        });
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        return NavigationUI.navigateUp(navController, appBarConfiguration)
-                || super.onSupportNavigateUp();
+        // Logika pro tlačítko Vymazat
+        btnDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                etName.setText("");
+                etSurname.setText("");
+                etPlace.setText("");
+                etVek.setText("");
+                tvInformation.setText("");
+            }
+        });
     }
 }
