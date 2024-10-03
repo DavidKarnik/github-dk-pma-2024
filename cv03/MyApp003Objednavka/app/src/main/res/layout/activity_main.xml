@@ -28,19 +28,19 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20sp"
             android:checked="true"
-            android:text="Kolo 1" />
+            android:text="MacBook" />
 
         <RadioButton
             android:id="@+id/radio2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kolo 2" />
+            android:text="Asus" />
 
         <RadioButton
             android:id="@+id/radio3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kolo 3" />
+            android:text="Lenovo" />
     </RadioGroup>
 
 
@@ -54,25 +54,26 @@
             android:id="@+id/checkbox4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lepší vidlice" />
+            android:text="Lepší procesor" />
 
         <CheckBox
             android:id="@+id/checkbox5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lepší sedlo" />
+            android:text="Lepší obrazovka" />
 
         <CheckBox
             android:id="@+id/checkbox6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Karbonová řidítka" />
+            android:text="Dvojitá záruka" />
 
         <Button
+            android:id="@+id/buttonObjednej"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginBottom="10sp"
-            android:text="Objednat kolo" />
+            android:text="Objednat počítač" />
 
         <TextView
             android:layout_width="match_parent"
@@ -85,5 +86,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-40sp"
-        android:src="@drawable/bicycle1" />
+        android:src="@drawable/comp1" />
 </LinearLayout>
