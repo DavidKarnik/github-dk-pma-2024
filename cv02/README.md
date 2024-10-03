@@ -2,7 +2,9 @@
 
 ## Zadání:
 Vymyslete a realizujte vlastní jednoduchou aplikaci využívající lineární layout.
+
 Vytvoření xml layoutu
+
 Vytvoření obsluhy v kotlinu/javě
 
 # Vypracování:
