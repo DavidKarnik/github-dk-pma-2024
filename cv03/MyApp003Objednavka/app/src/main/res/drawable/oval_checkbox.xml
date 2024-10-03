@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Stav zaškrtnutý -->
+    <item android:state_checked="true">
+        <shape android:shape="oval">
+            <solid android:color="#FF0000" /> <!-- Barva zaškrtnutého CheckBoxu -->
+            <size android:width="40dp" android:height="40dp" /> <!-- Velikost -->
+        </shape>
+    </item>
+
+    <!-- Stav nezaškrtnutý -->
+    <item android:state_checked="false">
+        <shape android:shape="oval">
+            <solid android:color="#00FF00" /> <!-- Barva nezaškrtnutého CheckBoxu -->
+            <size android:width="40dp" android:height="40dp" /> <!-- Velikost -->
+        </shape>
+    </item>
+</selector>
