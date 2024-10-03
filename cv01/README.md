@@ -1,7 +1,7 @@
 # Úkol 1 - Lineární layout
 
 ## Zadání:
-Dle vzoru vypracovat mobilní aplikaci s lineárním layoutem
+Dle vzoru vypracovat mobilní aplikaci s lineárním layoutem.
 
 ## Vypracování:
 
