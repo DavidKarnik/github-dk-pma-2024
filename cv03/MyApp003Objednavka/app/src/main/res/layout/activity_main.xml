@@ -27,8 +27,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20sp"
-            android:text="Kolo 1"
-            android:checked="true"/>
+            android:checked="true"
+            android:text="Kolo 1" />
 
         <RadioButton
             android:id="@+id/radio2"
@@ -47,8 +47,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="30sp">
+        android:layout_marginLeft="30sp"
+        android:orientation="vertical">
 
         <CheckBox
             android:id="@+id/checkbox4"
@@ -71,20 +71,19 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Objednat kolo"
-            android:layout_marginBottom="10sp"/>
+            android:layout_marginBottom="10sp"
+            android:text="Objednat kolo" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Souhrn objednávky:"/>
+            android:text="Souhrn objednávky:" />
     </LinearLayout>
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/bicycle"
-        android:layout_marginTop="-40sp"/>
-
-
+        android:layout_marginTop="-40sp"
+        android:src="@drawable/bicycle1" />
 </LinearLayout>
