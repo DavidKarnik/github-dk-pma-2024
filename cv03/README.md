@@ -1,3 +1,8 @@
-# PMA - Programování Mobilních Aplikací
-- předmět 1. semestr magisterského studia na TUL EF
-- vývoj aplikací pro Android - Kotlin, Java
+# Úloha 3 - Appka Objednávka
+
+## Zadání:
+Navrhněte podobné rozhraní jako je na obrázku.
+Vymyslete své vlastní téma...
+
+## Vypracování:
+
