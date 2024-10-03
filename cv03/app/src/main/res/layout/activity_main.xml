@@ -76,6 +76,7 @@
             android:text="Objednat počítač" />
 
         <TextView
+            android:id="@+id/souhrn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Souhrn objednávky:" />
@@ -85,6 +86,6 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-40sp"
+        android:layout_marginTop="-20sp"
         android:src="@drawable/comp1" />
 </LinearLayout>

@@ -1,6 +1,8 @@
 package com.example.myapp003objednavka;
 
 import android.os.Bundle;
+import android.widget.TextView;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -24,6 +26,14 @@ public class MainActivity extends AppCompatActivity {
         binding.radio1.setOnClickListener(v -> binding.imageView.setImageResource(R.drawable.comp1));
         binding.radio2.setOnClickListener(v -> binding.imageView.setImageResource(R.drawable.comp2));
         binding.radio3.setOnClickListener(v -> binding.imageView.setImageResource(R.drawable.comp3));
+
+        binding.buttonObjednej.setOnClickListener(v -> {
+            String procesor = binding.checkbox4.isChecked() ? "\n + lepší procesor" : "";
+            String monitor = binding.checkbox5.isChecked() ? "\n + lepší monitor" : "";
+            String zaruka = binding.checkbox6.isChecked() ? "\n + dvojitá záruka" : "";
+
+            binding.souhrn.setText("Souhrn objednávky:" + procesor + monitor + zaruka);
+        });
 
         ViewCompat.setOnApplyWindowInsetsListener(binding.getRoot(), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
