@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.MyApp005MoreActivities" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Přizpůsobení barev a stylů -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <!-- Můžeš přidat další přizpůsobení, pokud je potřeba -->
+    </style>
+</resources>
