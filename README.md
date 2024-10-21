@@ -3,6 +3,7 @@
 - vývoj aplikací pro Android - Kotlin, Java
 
 | Cvičení | Náplň |
+| --- | --- |
 | cv01 | --- |
 | cv02 | --- |
 | cv03 | --- |
