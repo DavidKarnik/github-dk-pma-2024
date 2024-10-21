@@ -4,9 +4,9 @@
 
 | Cvičení | Náplň |
 | --- | --- |
-| cv01 | --- |
-| cv02 | --- |
-| cv03 | --- |
+| cv01 | Lineání layout |
+| cv02 | Aplikace využívající lineární layout |
+| cv03 | Aplikace objednávky, linear layout + funkce |
 | cv04 | --- |
 | cv05 | --- |
 | cv06 | --- |
