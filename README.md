@@ -8,7 +8,7 @@
 | cv02 | Aplikace využívající lineární layout |
 | cv03 | App objednávky, linear layout + funkce |
 | cv04 | App pomocí Jetpack Compose UI frameworku |
-| cv05 | --- |
+| cv05 | Aplikace s více aktivitami |
 | cv06 | --- |
 | cv07 | --- |
 | cv08 | --- |
