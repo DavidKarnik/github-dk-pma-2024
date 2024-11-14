@@ -9,7 +9,7 @@
 | cv03 | App objednávky, linear layout + funkce |
 | cv04 | App pomocí Jetpack Compose UI frameworku |
 | cv05 | Aplikace s více aktivitami |
-| cv06 | --- |
+| cv06 | Custom Toast a Snackbar |
 | cv07 | --- |
 | cv08 | --- |
 | cv09 | --- |
