@@ -7,6 +7,8 @@ Vytvořte aplikaci využívající Toast
 - Pokuste se změnit ikonku u Toastu
 - Následně tyto dvě komponenty použijte v nějakém vašem komplikovanějším projektu
 
+`MyApp007ToastSnackbar`
+
 ## Vypracování:
 
 ![Snímek obrazovky 2024-11-14 113716](https://github.com/user-attachments/assets/a68e82c6-2a20-40e1-b50f-be8ec82990b1)
