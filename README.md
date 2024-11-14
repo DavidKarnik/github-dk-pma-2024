@@ -10,8 +10,8 @@
 | cv04 | App pomocí Jetpack Compose UI frameworku |
 | cv05 | Aplikace s více aktivitami |
 | cv06 | Custom Toast a Snackbar |
-| cv07a | Přepínání mezi 2 fragmenty |
-| cv07b | --- |
+| cv07a | Přepínání mezi 2 prázdnými fragmenty |
+| cv07b | Přepínání mezi 2 různými fragmenty |
 | cv08 | --- |
 | cv09 | --- |
 | cv10 | --- |
