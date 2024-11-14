@@ -12,6 +12,6 @@
 | cv06 | Custom Toast a Snackbar |
 | cv07a | Přepínání mezi 2 prázdnými fragmenty |
 | cv07b | Přepínání mezi 2 různými fragmenty |
-| cv08 | --- |
+| cv08 | SharedPreferences |
 | cv09 | --- |
 | cv10 | --- |
