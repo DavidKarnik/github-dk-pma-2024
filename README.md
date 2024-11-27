@@ -13,5 +13,9 @@
 | cv07a | Přepínání mezi 2 prázdnými fragmenty |
 | cv07b | Přepínání mezi 2 různými fragmenty |
 | cv08 | SharedPreferences |
-| cv09 | --- |
-| cv10 | --- |
+| cv09 | Aplikace využívající DataStore |
+| cv10 | Obrázek z galerie do aplikace |
+| cv11 | Aplikace jednoduchá matematika |
+| cv12 | Aplikace využívající DB |
+| cv13 | --- |
+
