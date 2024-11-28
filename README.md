@@ -2,6 +2,8 @@
 - předmět 1. semestr magisterského studia na TUL EF
 - vývoj aplikací pro Android - Kotlin, Java
 
+![Main aktivita](https://github.com/user-attachments/assets/1f259e06-d75a-4a0d-adbb-c89881cb7298)
+
 | Cvičení | Náplň |
 | --- | --- |
 | cv01 | Lineání layout |
