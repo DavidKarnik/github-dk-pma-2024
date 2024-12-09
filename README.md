@@ -15,7 +15,7 @@
 | cv08 | SharedPreferences | ✅ |
 | cv09 | Aplikace využívající DataStore | ✅ |
 | cv10 | Obrázek z galerie do aplikace | ✅ |
-| cv11 | Aplikace jednoduchá matematika | ⬜ |
-| cv12 | Aplikace využívající Room DB | ⬜ |
+| cv11 | Aplikace jednoduchá matematika | ✅ |
+| cv12 | Aplikace využívající Room DB | ✅ |
 | cv13 | Aplikace využívající cloud databázi Firebase | ✅ |
 
