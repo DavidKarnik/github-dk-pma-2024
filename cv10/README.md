@@ -14,3 +14,4 @@
 ![Snímek obrazovky 2024-12-09 194936](https://github.com/user-attachments/assets/83479a8a-5704-4757-a497-4fc864987c4b)
 ![Snímek obrazovky 2024-12-09 195007](https://github.com/user-attachments/assets/771ad202-4679-4ffb-be68-90a88ff7b87c)
 ![Snímek obrazovky 2024-12-09 195031](https://github.com/user-attachments/assets/c96e5113-d9fd-4450-b047-cfddab816122)
+
