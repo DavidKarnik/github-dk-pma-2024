@@ -1,6 +1,7 @@
 # PMA - Programování Mobilních Aplikací
 - předmět 1. semestr magisterského studia na TUL EF
 - vývoj aplikací pro Android - Kotlin, Java
+- v každém souboru cvičení je detailní popis s obrázky aplikací
 
 | Cvičení | Náplň | ⬜/✅ |
 | --- | --- | --- |
