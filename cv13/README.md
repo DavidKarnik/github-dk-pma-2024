@@ -14,3 +14,4 @@ jméno projektu
 ![Snímek obrazovky 2024-12-09 200636](https://github.com/user-attachments/assets/4c68e37f-94cf-4098-97d8-e0e5743a2f8b)
 ![Snímek obrazovky 2024-12-09 200646](https://github.com/user-attachments/assets/5427a917-1f7a-4eb9-a924-2935b2faee88)
 ![Snímek obrazovky 2024-12-09 200931](https://github.com/user-attachments/assets/2de07a0d-2bf0-40cc-8ac4-a87a030bda56)
+
