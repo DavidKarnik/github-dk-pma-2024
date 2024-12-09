@@ -6,12 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import kotlinx.coroutines.NonCancellable.start
+import com.example.myapp012ajednoduchamatematika.databinding.ActivityMainBinding
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
@@ -35,22 +32,28 @@ class MainActivity : AppCompatActivity() {
     var totalQuestions = 0
     var cals = ""
 
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_main)
+        // Inicializace View Bindingu
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val calInt = intent.getStringExtra("cals")
-        cals = calInt!!
-        TimeTextView = findViewById(R.id.TimeTextView)
-        QuestionTextText = findViewById(R.id.QuestionTextText)
-        ScoreTextView = findViewById(R.id.ScoreTextView)
-        AlertTextView = findViewById(R.id.AlertTextView)
+        // ošetření null intentu ... pokud by byl null, tak se použije "+"
+        val calInt = intent.getStringExtra("cals") ?: "+"
+        cals = calInt
+
+        TimeTextView = binding.TimeTextView
+        QuestionTextText = binding.QuestionTextText
+        ScoreTextView = binding.ScoreTextView
+        AlertTextView = binding.AlertTextView
         //FinalScoreTextView = findViewById(R.id.FinalScoreTextView)
-        btn0 = findViewById(R.id.button0)
-        btn1 = findViewById(R.id.button1)
-        btn2 = findViewById(R.id.button2)
-        btn3 = findViewById(R.id.button3)
+        btn0 = binding.button0
+        btn1 = binding.button1
+        btn2 = binding.button2
+        btn3 = binding.button3
 
         start()
 
@@ -70,19 +73,23 @@ class MainActivity : AppCompatActivity() {
                     "+" -> {
                         answers.add(a + b)
                     }
+
                     "-" -> {
                         answers.add(a - b)
                     }
+
                     "*" -> {
                         answers.add(a * b)
                     }
+
                     "/" -> {
-                        try {
+                        if (b != 0) {
                             answers.add(a / b)
-                        } catch (e: Exception) {
-                            e.printStackTrace()
+                        } else {
+                            answers.add(0)
                         }
                     }
+
                 }
             } else {
                 var wrongAnswer = random.nextInt(20)
@@ -128,8 +135,9 @@ class MainActivity : AppCompatActivity() {
         points = 0
         totalQuestions = 0
         ScoreTextView!!.text = "$points/$totalQuestions"
-        countDownTimer!!.start()
+        start() // Přidáno
     }
+
 
     private fun start() {
         NextQuestion(cals)
