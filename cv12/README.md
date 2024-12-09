@@ -1,4 +1,4 @@
-# Úloha 13 - Aplikace využívající Room DB
+# Úloha 12 - Aplikace využívající Room DB
 
 ## Zadání:
 - vytvoření aplikace (např. jednoduchý poznámkovník), která bude pracovat s databází a bude zajišťovat potřebné CRUD operace nad touto databází...
