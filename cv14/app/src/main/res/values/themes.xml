@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.MyApp016aVanocniAppka" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Nastavení základních atributů -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryVariant">@color/dark_red</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <!-- Hlavní téma aplikace -->
+    <style name="Theme.MyApp016aVanocniAppka" parent="Base.Theme.MyApp016aVanocniAppka">
+        <!-- Styl tlačítek -->
+        <item name="buttonStyle">@style/CustomButton</item>
+    </style>
+
+    <!-- Custom Button Style -->
+    <style name="CustomButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/red</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
