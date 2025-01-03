@@ -19,4 +19,4 @@
 | cv11 | Aplikace jednoduchá matematika | ✅ |
 | cv12 | Aplikace využívající Room DB | ✅ |
 | cv13 | Aplikace využívající cloud databázi Firebase | ✅ |
-| cv14 | Vánoční aplikace | ⬜ |
+| cv14 | Vánoční aplikace | ✅ |
