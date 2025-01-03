@@ -1,7 +1,7 @@
 # Úloha 14 - Vánoční aplikace
 
 ## Zadání:
--  Zkompletujte poznatky, které doposud máte a vytvořte aplikaci s vánoční tématikou.
+- Zkompletujte poznatky, které doposud máte a vytvořte aplikaci s vánoční tématikou.
 - Nemusí využívat DB.
 - K nápadu i realizaci můžete využít AI pomocníky.
 - K aplikaci vytvořte WIKI tutoriál, ve kterém popíšete postup implementace. Také uveďte stručný úvod k tomu, co má aplikace dělat.
@@ -10,6 +10,8 @@
 - Tento úkol je jako povinný ke zkoušce...
 
 ## Vypracování:
+
+- Více informací o aplikaci naleznete na [Wiki](./wiki/README.md).
 
 ![Snímek obrazovky 2025-01-03 210741](https://github.com/user-attachments/assets/386a4b40-d7f3-438d-83a8-a9c86dd1ade0)
 ![Snímek obrazovky 2025-01-03 210819](https://github.com/user-attachments/assets/6d4e94a2-02dc-4ad0-9dd8-79c77ff2c873)
